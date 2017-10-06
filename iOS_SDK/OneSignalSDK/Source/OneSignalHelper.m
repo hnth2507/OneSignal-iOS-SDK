@@ -1020,12 +1020,12 @@ static OneSignal* singleInstance = nil;
         if (!webVC)
             webVC = [[OneSignalWebView alloc] init];
         webVC.url = url;
-        [webVC showInApp];
+        //[webVC showInApp];
     }
     else {
         // Keep dispatch_async. Without this the url can take an extra 2 to 10 secounds to open.
          [OneSignalHelper dispatch_async_on_main_queue: ^{
-            [[UIApplication sharedApplication] openURL:url];
+            //[[UIApplication sharedApplication] openURL:url];
         }];
     }
     
