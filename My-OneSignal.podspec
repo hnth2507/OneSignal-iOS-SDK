@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "My-OneSignal"
-  s.version          = "2.5.4"
+  s.version          = "1.0"
   s.summary          = "OneSignal push notification library for mobile apps."
   s.homepage         = "https://onesignal.com"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -10,7 +10,5 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios
   s.requires_arc = true
-  
-  s.ios.vendored_frameworks = 'iOS_SDK/OneSignalSDK/Framework/OneSignal.framework'
   s.framework               = 'SystemConfiguration', 'UIKit', 'UserNotifications'
 end
